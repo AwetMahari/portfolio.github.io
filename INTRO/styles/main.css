@@ -1,0 +1,399 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x: hidden;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*Home Section*/
+
+.homeWrapper{
+    background-image: url("../images/hero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.hero-section{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 870px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 6%;
+}
+
+.hero-section h1{
+    text-align: start;
+    margin: 0;
+    color: white;
+    font-size: 90px;
+}
+
+.hero-section h1 span{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+}
+
+.hero-section p{
+    color: white;
+    font-size: 16px;
+}
+
+.hero-section button{
+    padding: 15px;
+    font-size: 16px;
+    color: white;
+    border-radius: 2px;
+    border: none;
+    background-image: linear-gradient(to right, #FF512F 0%, #DD2476 51%, #FF512F 100%);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/*PriceTableContainer*/
+
+.PriceTableContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-bottom: 5%;
+    background-image: url("../images/svg.png");
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    scroll-margin: 50px;
+}
+
+.PriceTableContainer .title{
+align-self: center;
+color: white;
+margin-bottom: 8%;
+margin-top: 6%;
+}
+
+.PriceTableContainer .altName{
+    margin: 5% 0;
+}
+
+.PriceTableContainer .cards{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 50px;
+}
+
+.PriceTableContainer .card{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 40px;
+    background-color: white;
+    border-top-right-radius: 10%;
+    border-top-left-radius: 10%;
+}
+
+.card .step1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.card .step2{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.standard .step1{
+    background-color: #E04646;
+}
+
+.card .price{
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.price .dollarSign{
+    align-self: center;
+}
+
+.price .number{
+    font-size: 35px;
+    align-self: flex-start;
+}
+
+.price .slash{
+    align-self: flex-end;
+}
+
+.price .month{
+    font-size: 10px;
+    align-self: flex-end;
+}
+
+.standard button{
+    background-color: #E04646;
+    color: white;
+}
+
+.popular .step1{
+    background-color: #0090CC;
+}
+
+.popular button{
+    background-color: #0090CC;
+}
+
+.golden .step1{
+    background-color: #00AD44;
+}
+
+.golden button{
+    background-color: #00AD44;
+}
+
+.professional .step1{
+    background-color: #FB8A2E;
+}
+
+.professional button{
+    background-color: #FB8A2E;
+}
+
+.PriceTableContainer button{
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-bottom: 5%;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.PriceTableContainer button:hover{
+    background-color: black;
+    color: white;
+}
+
+.courses p{
+font-weight: bolder;
+display: flex;
+align-items: center;
+justify-content: start;
+margin: 0 0;
+}
+
+.courses span{
+    color: rgb(108, 107, 107);
+    font-weight: 100;
+    margin-left: 5%;
+}
+
+.standard i{
+    color: #E04646;
+}
+
+.popular i{
+    color: #0090CC;
+}
+
+.golden i{
+    color: #00AD44;
+}
+
+.professional i{
+    color: #E04646;
+}
+
+.courses i.fa{
+    margin-right: 10px;
+    padding: 15px 0;
+}
+
+/* ---------Our Trainers Section--------------*/
+
+.ourTrainersContainer{
+background-color: black;
+color: white;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+padding-bottom: 6%;
+scroll-margin: 50px;
+}
+
+.ourTrainersContainer h1{
+    padding: 5% 0;
+}
+
+.ourTrainersContainer .trainerslist{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.trainerslist .trainer{
+    width: 260px;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 10px;
+    padding:2% 1%;
+}
+
+
+.ourTrainersContainer .trainerslist .img{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border: 3px solid black;
+    filter: grayscale();
+    transition: filter 0.3s, height 0.3s , width 0.3s;
+}
+
+.trainerslist .img:hover{
+    filter: grayscale(0);
+    width: 205px;
+    height: 205px;
+}
+
+.ourTrainersContainer .img1{
+    background-image: url("../images/trainer1.png");
+}
+
+
+.ourTrainersContainer .img2{
+    background-image: url("../images/trainer2.png");
+}
+
+.ourTrainersContainer .img3{
+    background-image: url("../images/trainer3.png");
+}
+
+.ourTrainersContainer .img4{
+    background-image: url("../images/trainer2.png");
+}
+
+
+/*Contact Section*/
+
+.contactWrapper .hero-section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+.upperSectionContainer{
+    background-image: url("../images/bild5.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.contactWrapper .upperSection{
+    background-color: #000000a2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.upperSection h1{
+    margin-left: 6%;
+}
+
+.lowerSectionContainer{
+    background-image: url("../images/svg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contactWrapper .lowerSection {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    align-items: center;
+}
+
+.lowerSection form{
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+    gap: 20px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.lowerSection .details{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.lowerSection input{
+    width: 300px;
+    padding: 10px;
+    border: none;
+    border-radius: 2%;
+    outline: none;
+}
+
+.lowerSection textarea{
+    width: 98%;
+    border: none;
+    border-radius: 2%;
+    outline: none;
+    padding: 10px 0 0 10px;
+}
+
+form .submitBtn{
+    background-color: orangered;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 0;
+    cursor: pointer;
+    align-self: center;
+    color: white;
+    font-weight: bolder;
+    transition: 0.3s ease;
+}
+
+form .submitBtn:hover{
+    background-color: white;
+    color: orangered;
+}
