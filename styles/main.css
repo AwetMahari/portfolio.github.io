@@ -691,4 +691,7 @@ border: 5px solid blueviolet;
     #projects h2{
         font-size: 20px;
     }
+        .hambugerMenu{
+        margin-right: 10%;
+    }
   }
