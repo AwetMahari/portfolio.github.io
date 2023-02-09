@@ -15,34 +15,35 @@ moonIcon.addEventListener("click", function(){
     body.classList.toggle("darkMode");
 
     //change the icon
-    let condition=moonIcon.classList.contains("fa-moon");
+    let condition = moonIcon.classList.contains("fa-moon");
 
-    if(condition){
+    if (condition) {
         moonIcon.classList.remove("fa-moon");
         moonIcon.classList.add("fa-sun");
         moonIcon.style.cursor="pointer";
         moonIcon.style.transition=".3s ease";
-
-        //create a localStorage to save the selected theme
         localStorage.setItem("theme", "dark");
-    }else{
+    } else {
         moonIcon.classList.remove("fa-sun");
         moonIcon.classList.add("fa-moon");
         localStorage.setItem("theme", "light");
     }
+
     nav.classList.toggle("navActive");
 })
 
+
 //Check which theme was selected
 
-window.addEventListener("load", function(){
-    //Get the selected theme from local storage 
-    let theme=localStorage.getItem("theme");
-
-    if(theme=="dark"){
-        body.classList.toggle("darkMode");
+window.addEventListener("load", function() {
+    let theme = localStorage.getItem("theme");
+    if (theme === "dark") {
+        body.classList.add("darkMode");
+        moonIcon.addEventListener("click", function(){
+            localStorage.setItem("theme", "light");
+        })
     }
-})
+});
 
 //Hambuger Menu
 
