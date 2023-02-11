@@ -5,9 +5,12 @@ let moonIcon=document.querySelector(".darkModeIcon");
 let linkItems=document.querySelectorAll("ul li a");
 
 linkItems.forEach(link =>{
-    link.addEventListener("click", function(){
+    // Close the hamurger menu when clicking on the links
+    link.addEventListener("click", function(e){
         nav.classList.toggle("navActive");
+
     })
+
 })
 
 moonIcon.addEventListener("click", function(){
@@ -57,3 +60,33 @@ body.addEventListener("scroll", function(){
     let scrollinglevel=body.scrollTop;
     nav.classList.toggle("navScrolling", scrollinglevel>20);
 });
+
+
+
+// Hover effect on the nav links
+
+linkItems.forEach(link =>{
+
+    link.addEventListener("mouseover", function(e){
+
+        for(i=0; i<linkItems.length; i++){
+            linkItems[i].classList.remove("activeLink");
+            linkItems[i].style.color="#b5b4b4";
+            e.target.classList.add("activeLink");
+            e.target.style.color="white";
+        }
+    
+    })
+
+    link.addEventListener("mouseleave", function(e){
+
+        for(i=0; i<linkItems.length; i++){
+            linkItems[i].classList.remove("activeLink");
+            linkItems[i].style.color="";
+            e.target.classList.remove("activeLink");
+            e.target.style.color="";
+        }
+    
+    })
+
+})
