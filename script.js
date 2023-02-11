@@ -3,6 +3,7 @@ let nav=document.querySelector(".nav");
 let body=document.querySelector(".body");
 let moonIcon=document.querySelector(".darkModeIcon");
 let linkItems=document.querySelectorAll("ul li a");
+let scrollTopArrow=document.querySelector(".topArrow");
 
 linkItems.forEach(link =>{
     // Close the hamurger menu when clicking on the links
@@ -59,6 +60,7 @@ hambugerMenu.addEventListener("click", function(){
 body.addEventListener("scroll", function(){
     let scrollinglevel=body.scrollTop;
     nav.classList.toggle("navScrolling", scrollinglevel>20);
+    scrollTopArrow.classList.toggle("appear", scrollinglevel>620);
 });
 
 
