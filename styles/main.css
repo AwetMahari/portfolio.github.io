@@ -14,11 +14,11 @@ body, html{
 
 :root{
     --white:white;
-    --black:black;
+    --black:#181818;
 }
 
 .darkMode{
-    --white:black;
+    --white:#181823;
     --black:white;
 }
 
@@ -181,6 +181,55 @@ border: 5px solid blueviolet;
 
 .aboutHeader{
     font-size: 14px;
+}
+
+.topArrow{
+    right: 5%;
+    top: 85%;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+    display: none;
+    opacity: 0;
+   }
+
+   .topArrow:hover{
+    transform: translateY(-2px);
+   }
+
+.topArrow i{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: var(--black);
+    font-size: 25px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-arrow-up:before {
+    animation: scrollTop 1.2s infinite;
+    color: var(--white);
+}
+
+.appear{
+    display: flex;
+    opacity: 1;
+    
+}
+
+@keyframes scrollTop{
+    0%{
+        transform: translateY(0);
+    }
+    40%{
+        transform: translateY(-5px);
+    }
 }
 
 .topImg, .middleImg, .bottomImg{
