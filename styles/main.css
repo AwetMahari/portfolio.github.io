@@ -38,7 +38,7 @@ nav a{
     transition: 0.3s ease all;
 }
 
-nav ul li a:hover {
+.activeLink:hover {
     background-color: rebeccapurple;
     color: white;
 }
